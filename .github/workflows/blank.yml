@@ -4,7 +4,8 @@
     <title>Digital Clock</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/baskerville/7.0.1/baskerville.min.css" rel="stylesheet">
     <style>
-        html, body {
+        body {
+            margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
