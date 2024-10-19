@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Digital Clock</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/baskerville/7.0.1/baskerville.min.css" rel="stylesheet">
+    <title>Goddess Clock</title>
+<head>
     <style>
         body {
             margin: 0;
@@ -45,8 +45,74 @@
 </head>
 <body>
     <div id="clock">
-        <div id="time">00:00:00</div>
-        <div id="ampm">AM</div>
+        <div id="time-container">
+          <div class="time-container">
+            <span id="time-display"> 00:00:00 </span>
+            <span id="ampm"></span>
+          </div>
+          <div id="date"></div>
+          
+    <div body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://i.imgur.com/crNHLRc.png)center/cover;
+    background-size: cover;
+    background-position: center 47%;  /* center 60% This moves the image down */
+    /* Alternative options:
+    background-position: center 100px;  /* Moves down by specific pixels */
+    /* background-position: center bottom;  /* Aligns to bottom */
+    /* background-position: center 75%;     /* Moves down by percentage */
+    */
+    background-repeat: no-repeat;
+}
+
+#clock { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    font-family: 'Baskerville', monospace;
+    color: #caa382;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.time-container {
+  display: flex
+  align-items: center;
+}
+
+#time-display {
+    font-family: 'Baskerville', monospace;
+    font-size: 120px;
+    display: flex;
+    gap: 10px;  /* This adds consistent spacing */
+    transform: translateY(30px);  /* Adjust this value to move time up/down */
+    display: inline;
+}
+
+#ampm {
+    gap: 30px;  /* This adds consistent spacing */
+      /* Adjust this value to move time up/down */
+    font-size: 80px;
+    display: inline;
+    padding-left: 20px;
+    color: #caa382;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#date {
+    font-family: 'Baskerville', monospace;
+    font-size: 52px;
+    color: #caa382;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 3px;
+    display: block;
+    text align: center;
+}
     </div>
 
     <script>
