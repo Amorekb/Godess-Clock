@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Goddess Clock</title>
-<head>
+    
     <style>
         body {
             margin: 0;
@@ -11,12 +11,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background image: url("https://imgur.com/a/CaNAhPK");
+            /* There was a space in "background image" and the imgur URL wasn't direct */
+            background-image: url("https://i.imgur.com/CaNAhPK.png");
             background-size: cover;
             background-position: center 47%;
             background-repeat: no-repeat;
             overflow: hidden;
         }
+    </style>
+</head>
 
         #clock {
             font-family: 'Baskerville', monospace;
